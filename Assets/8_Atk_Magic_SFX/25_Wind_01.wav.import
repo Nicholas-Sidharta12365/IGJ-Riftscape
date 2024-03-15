@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/25_Wind_01.wav-a76ffe82433991d2ef6dd593f074911e.sample"
+
+[deps]
+
+source_file="res://Assets/8_Atk_Magic_SFX/25_Wind_01.wav"
+dest_files=[ "res://.import/25_Wind_01.wav-a76ffe82433991d2ef6dd593f074911e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

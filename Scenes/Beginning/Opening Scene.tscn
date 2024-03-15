@@ -1,0 +1,531 @@
+[gd_scene load_steps=53 format=2]
+
+[ext_resource path="res://Assets/Video/Thunder.ogv" type="VideoStream" id=1]
+[ext_resource path="res://Assets/Free Pixel Art Forest/PNG/Background layers/Layer_0000_9.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/Main Enemy/Boss.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Portal/Purple Portal Sprite Sheet.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/Beginning/Particles2D.gd" type="Script" id=5]
+[ext_resource path="res://Assets/Free Pixel Art Forest/PNG/Background layers/Layer_0003_6.png" type="Texture" id=6]
+[ext_resource path="res://Scenes/Starting Village/AnimatedText.gd" type="Script" id=7]
+[ext_resource path="res://Scenes/Portal/Next Map.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Font/VT323-Regular.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://Scenes/Beginning/Opening Scene.gd" type="Script" id=10]
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 928, 64, 0, 64, 0, 8, 928, 8 )
+
+[sub_resource type="TileSet" id=3]
+0/name = "Layer_0000_9.png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 736, 928, 64 )
+0/tile_mode = 2
+0/autotile/icon_coordinate = Vector2( 0, 0 )
+0/autotile/tile_size = Vector2( 928, 88 )
+0/autotile/spacing = 0
+0/autotile/occluder_map = [  ]
+0/autotile/navpoly_map = [  ]
+0/autotile/priority_map = [  ]
+0/autotile/z_index_map = [  ]
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 2 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+
+[sub_resource type="ParticlesMaterial" id=1]
+lifetime_randomness = 1.0
+emission_shape = 2
+emission_box_extents = Vector3( 1000, 50, 1 )
+flag_disable_z = true
+spread = 66.83
+gravity = Vector3( -45, 98, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+color = Color( 0, 0.137255, 1, 1 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 213, 321 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 528, 388.25 )
+
+[sub_resource type="AtlasTexture" id=66]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=67]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 64, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=68]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 128, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=69]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 192, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=70]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 256, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=71]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 320, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=72]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 384, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=73]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 448, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=74]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 128, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=75]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 64, 128, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=76]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 128, 128, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=77]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 192, 128, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=78]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 256, 128, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=79]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 320, 128, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=80]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 384, 128, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=81]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 448, 128, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=82]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=83]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 64, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=84]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 128, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=85]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 192, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=86]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 256, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=87]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 320, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=88]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 384, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=89]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 448, 0, 64, 64 )
+
+[sub_resource type="SpriteFrames" id=30]
+animations = [ {
+"frames": [ SubResource( 66 ), SubResource( 67 ), SubResource( 68 ), SubResource( 69 ), SubResource( 70 ), SubResource( 71 ), SubResource( 72 ), SubResource( 73 ) ],
+"loop": true,
+"name": "appear",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 74 ), SubResource( 75 ), SubResource( 76 ), SubResource( 77 ), SubResource( 78 ), SubResource( 79 ), SubResource( 80 ), SubResource( 81 ) ],
+"loop": true,
+"name": "exit",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 82 ), SubResource( 83 ), SubResource( 84 ), SubResource( 85 ), SubResource( 86 ), SubResource( 87 ), SubResource( 88 ), SubResource( 89 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=42]
+extents = Vector2( 6.55, 52.9 )
+
+[sub_resource type="DynamicFont" id=31]
+font_data = ExtResource( 9 )
+
+[sub_resource type="Animation" id=32]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("1:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+
+[sub_resource type="Animation" id=33]
+resource_name = "generate"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("1:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2, 3, 4, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 1.0, 1.0, 0.0 ]
+}
+
+[sub_resource type="RectangleShape2D" id=34]
+extents = Vector2( 32, 264.5 )
+
+[sub_resource type="Animation" id=38]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("1:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("1:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "No... I will definitely save them..." ]
+}
+
+[sub_resource type="Animation" id=39]
+resource_name = "generate"
+length = 6.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("1:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2, 3, 4, 5, 6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("1:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "I need to save my people...", "No... I will definitely save them..." ]
+}
+
+[sub_resource type="Animation" id=40]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("1:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+
+[sub_resource type="Animation" id=41]
+resource_name = "generate"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("1:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0, 1.0, 0.0 ]
+}
+
+[sub_resource type="Animation" id=35]
+resource_name = "Fade In"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 2.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=36]
+resource_name = "Fade Out"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=37]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ) ]
+}
+
+[node name="Opening Scene" type="Node2D"]
+script = ExtResource( 10 )
+
+[node name="VideoPlayer" type="VideoPlayer" parent="."]
+margin_left = -415.0
+margin_top = -139.0
+margin_right = 2939.0
+margin_bottom = 626.0
+stream = ExtResource( 1 )
+autoplay = true
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 3 )
+cell_size = Vector2( 928, 88 )
+format = 1
+tile_data = PoolIntArray( 458751, 0, 0, 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 458765, 0, 0 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 1178, -378 )
+scale = Vector2( 3.44828, 2.75536 )
+texture = ExtResource( 6 )
+
+[node name="Particles2D" type="Particles2D" parent="."]
+position = Vector2( 923, 10 )
+amount = 1200
+lifetime = 8.0
+speed_scale = 2.0
+randomness = 1.0
+process_material = SubResource( 1 )
+script = ExtResource( 5 )
+node_player = "Enemy"
+
+[node name="Enemy" parent="." instance=ExtResource( 3 )]
+position = Vector2( 20, 434 )
+collision_layer = 2
+collision_mask = 257
+
+[node name="Static" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Static"]
+position = Vector2( -203, 311 )
+shape = SubResource( 4 )
+
+[node name="Static2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Static2"]
+position = Vector2( 2410, 241.75 )
+shape = SubResource( 5 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 1809, 396 )
+scale = Vector2( 5, 5 )
+frames = SubResource( 30 )
+animation = "idle"
+
+[node name="Area2D" type="Area2D" parent="AnimatedSprite"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite/Area2D"]
+position = Vector2( -40.55, -24.5 )
+shape = SubResource( 42 )
+
+[node name="AnimatedText" type="Node2D" parent="."]
+script = ExtResource( 7 )
+target_body_name = "Enemy"
+target_player_path = NodePath("../Enemy")
+
+[node name="1" type="Label" parent="AnimatedText"]
+margin_left = 18.0
+margin_top = 373.0
+margin_right = 264.0
+margin_bottom = 390.0
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_fonts/font = SubResource( 31 )
+text = "Its time... the prophecy must be fulfilled"
+percent_visible = 0.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatedText"]
+anims/RESET = SubResource( 32 )
+anims/generate = SubResource( 33 )
+
+[node name="Area2D" type="Area2D" parent="AnimatedText"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedText/Area2D"]
+position = Vector2( 69, 272 )
+shape = SubResource( 34 )
+
+[node name="AnimatedText2" type="Node2D" parent="."]
+position = Vector2( 400, 0 )
+script = ExtResource( 7 )
+target_body_name = "Enemy"
+target_player_path = NodePath("../Enemy")
+
+[node name="1" type="Label" parent="AnimatedText2"]
+margin_left = 18.0
+margin_top = 373.0
+margin_right = 264.0
+margin_bottom = 390.0
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_fonts/font = SubResource( 31 )
+text = "No... I will definitely save them..."
+percent_visible = 0.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatedText2"]
+anims/RESET = SubResource( 38 )
+anims/generate = SubResource( 39 )
+
+[node name="Area2D" type="Area2D" parent="AnimatedText2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedText2/Area2D"]
+position = Vector2( 69, 272 )
+shape = SubResource( 34 )
+
+[node name="AnimatedText3" type="Node2D" parent="."]
+position = Vector2( 1600, 0 )
+script = ExtResource( 7 )
+target_body_name = "Enemy"
+target_player_path = NodePath("../Enemy")
+
+[node name="1" type="Label" parent="AnimatedText3"]
+margin_left = -50.0
+margin_top = 362.0
+margin_right = 196.0
+margin_bottom = 379.0
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_fonts/font = SubResource( 31 )
+text = "I'LL MAKE THEM PAY!!!"
+percent_visible = 0.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatedText3"]
+anims/RESET = SubResource( 40 )
+anims/generate = SubResource( 41 )
+
+[node name="Area2D" type="Area2D" parent="AnimatedText3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedText3/Area2D"]
+position = Vector2( 8, 272 )
+shape = SubResource( 34 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -61.0
+margin_top = -59.0
+margin_right = 1082.0
+margin_bottom = 656.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="RectAnimationPlayer" type="AnimationPlayer" parent="."]
+"anims/Fade In" = SubResource( 35 )
+"anims/Fade Out" = SubResource( 36 )
+anims/RESET = SubResource( 37 )
+
+[node name="Next Map" parent="." instance=ExtResource( 8 )]
+position = Vector2( 789, -71 )
+next_scene_path = "res://Scenes/Starting Village/starting village_1_first.tscn"
+player_spawn_location = Vector2( 50, 510 )
+character_name = "Enemy"
+
+[connection signal="body_entered" from="AnimatedSprite/Area2D" to="." method="_on_Area2D_body_entered"]

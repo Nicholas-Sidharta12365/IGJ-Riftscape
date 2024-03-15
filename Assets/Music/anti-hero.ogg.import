@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/anti-hero.ogg-48c202b2fe823707adc16b32a505c3ff.oggstr"
+
+[deps]
+
+source_file="res://Assets/Music/anti-hero.ogg"
+dest_files=[ "res://.import/anti-hero.ogg-48c202b2fe823707adc16b32a505c3ff.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
